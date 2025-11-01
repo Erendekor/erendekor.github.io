@@ -1,13 +1,102 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Benim Web Sitem</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EREN DEKORASYON | Profesyonel Tadilat & Dış Cephe Çözümleri</title>
+  <style>
+    :root {
+      --ana: #005baa;
+      --açık: #f3f7fb;
+      --gri: #444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--gri); }
+    header { background: var(--ana); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 10; }
+    header .container { width: 90%; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.2rem; letter-spacing: 1px; }
+    nav a { color: white; text-decoration: none; margin-left: 1rem; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { background: linear-gradient(to right, #005baa, #0093e9); color: white; text-align: center; padding: 4rem 1rem; }
+    .hero h2 { font-size: 2rem; margin-bottom: .5rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 1rem; }
+    .btn { background: white; color: var(--ana); padding: .7rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    .btn:hover { background: #f3f7fb; }
+
+    section { width: 90%; max-width: 1100px; margin: 3rem auto; }
+    h3 { color: var(--ana); margin-bottom: .5rem; font-size: 1.4rem; }
+    p { margin-bottom: 1rem; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { background: var(--açık); padding: 1.5rem; border-radius: 10px; border: 1px solid #e0e0e0; text-align: center; }
+    .card h4 { color: var(--ana); margin-bottom: .5rem; }
+
+    footer { background: #111; color: #ccc; text-align: center; padding: 1rem 0; font-size: .9rem; }
+    footer a { color: #ccc; text-decoration: none; }
+    footer a:hover { color: white; }
+
+    @media (max-width:700px){
+      header .container { flex-direction: column; text-align: center; }
+      nav { margin-top: .5rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hoşgeldiniz!</h1>
-  <p>Bu benim ilk ücretsiz web sitem 🎉</p>
-  <p>Yapım: <b>Ben</b></p>
+  <header>
+    <div class="container">
+      <h1>EREN DEKORASYON</h1>
+      <nav>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Profesyonel Dış Cephe ve Dekorasyon Hizmetleri</h2>
+    <p>Kaliteli işçilik, uzun ömürlü çözümler — güvenle tercih edilen marka.</p>
+    <a href="#iletisim" class="btn">Teklif Al</a>
+  </section>
+
+  <section id="hizmetler">
+    <h3>Hizmetlerimiz</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Dış Cephe Boya ve Tadilat</h4>
+        <p>Jotun ve Marshall boya seçenekleriyle uzun ömürlü cephe çözümleri.</p>
+      </div>
+      <div class="card">
+        <h4>İç Mekan Dekorasyon</h4>
+        <p>Alçıpan, duvar kaplama, boya, zemin yenileme ve özel tasarımlar.</p>
+      </div>
+      <div class="card">
+        <h4>Çatı ve İzolasyon</h4>
+        <p>Isı ve su yalıtımı, kiremit onarımı, izolasyon uygulamaları.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hakkimizda">
+    <h3>Hakkımızda</h3>
+    <p>EREN DEKORASYON olarak dış cephe, iç dekorasyon ve tadilat alanında profesyonel çözümler sunuyoruz. 
+       Her projede kaliteli malzeme, deneyimli ekip ve müşteri memnuniyetini ön planda tutuyoruz.</p>
+  </section>
+
+  <section id="iletisim">
+    <h3>İletişim</h3>
+    <p><b>Telefon:</b> 0 (5xx) xxx xx xx</p>
+    <p><b>E-posta:</b> info@erendekorasyon.com</p>
+    <p><b>Adres:</b> İstanbul / Türkiye</p>
+  </section>
+
+  <footer>
+    <p>© <span id="yil"></span> EREN DEKORASYON — Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    document.getElementById("yil").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
