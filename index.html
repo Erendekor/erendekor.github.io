@@ -1,195 +1,240 @@
-<!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EREN DEKORASYON | Profesyonel Tadilat & Dış Cephe Çözümleri</title>
-  <style>
-    :root {
-      --ana: #005baa;
-      --açık: #f3f7fb;
-      --gri: #444;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--gri); }
-    header { background: var(--ana); color: white; padding: 1rem 0; position: sticky; top: 0; z-index: 10; }
-    header .container { width: 90%; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { font-size: 1.2rem; letter-spacing: 1px; }
-    nav a { color: white; text-decoration: none; margin-left: 1rem; font-weight: 500; }
-    nav a:hover { text-decoration: underline; }
-
-    .hero { background: linear-gradient(to right, #005baa, #0093e9); color: white; text-align: center; padding: 4rem 1rem; }
-    .hero h2 { font-size: 2rem; margin-bottom: .5rem; }
-    .hero p { font-size: 1.1rem; margin-bottom: 1rem; }
-    .btn { background: white; color: var(--ana); padding: .7rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: bold; }
-    .btn:hover { background: #f3f7fb; }
-
-    section { width: 90%; max-width: 1100px; margin: 3rem auto; }
-    h3 { color: var(--ana); margin-bottom: .5rem; font-size: 1.4rem; }
-    p { margin-bottom: 1rem; }
-
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .card { background: var(--açık); padding: 1.5rem; border-radius: 10px; border: 1px solid #e0e0e0; text-align: center; }
-    .card h4 { color: var(--ana); margin-bottom: .5rem; }
-
-    footer { background: #111; color: #ccc; text-align: center; padding: 1rem 0; font-size: .9rem; }
-    footer a { color: #ccc; text-decoration: none; }
-    footer a:hover { color: white; }
-
-    @media (max-width:700px){
-      header .container { flex-direction: column; text-align: center; }
-      nav { margin-top: .5rem; }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>EREN DEKORASYON</h1>
-      <nav>
-        <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#iletisim">İletişim</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <h2>Profesyonel Dış Cephe ve Dekorasyon Hizmetleri</h2>
-    <p>Kaliteli işçilik, uzun ömürlü çözümler — güvenle tercih edilen marka.</p>
-    <a href="#iletisim" class="btn">Teklif Al</a>
-  </section>
-
-  <section id="hizmetler">
-    <h3>Hizmetlerimiz</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>Dış Cephe Boya ve Tadilat</h4>
-        <p>Jotun ve Marshall boya seçenekleriyle uzun ömürlü cephe çözümleri.</p>
-      </div>
-      <div class="card">
-        <h4>İç Mekan Dekorasyon</h4>
-        <p>Alçıpan, duvar kaplama, boya, zemin yenileme ve özel tasarımlar.</p>
-      </div>
-      <div class="card">
-        <h4>Çatı ve İzolasyon</h4>
-        <p>Isı ve su yalıtımı, kiremit onarımı, izolasyon uygulamaları.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="hakkimizda">
-    <h3>Hakkımızda</h3>
-    <p>EREN DEKORASYON olarak dış cephe, iç dekorasyon ve tadilat alanında profesyonel çözümler sunuyoruz. 
-       Her projede kaliteli malzeme, deneyimli ekip ve müşteri memnuniyetini ön planda tutuyoruz.</p>
-  </section>
-
-  <section id="iletisim">
-    <h3>İletişim</h3>
-    <p><b>Telefon:</b> 0 (5xx) xxx xx xx</p>
-    <p><b>E-posta:</b> info@erendekorasyon.com</p>
-    <p><b>Adres:</b> İstanbul / Türkiye</p>
-  </section>
-
-  <footer>
-    <p>© <span id="yil"></span> EREN DEKORASYON — Tüm hakları saklıdır.</p>
-  </footer>
-
-  <script>
-    document.getElementById("yil").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eren Dekorasyon | Ankara</title>
+  <title>Eren Yapı Dekorasyon | Ankara</title>
   <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(to bottom right, #f5f6fa, #dcdde1);
-      color: #2f3640;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #0f0f0f;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      padding: 40px 20px 20px;
+      border-bottom: 2px solid #444;
       text-align: center;
     }
-    header {
-      background-color: #273c75;
-      color: white;
-      padding: 30px 10px;
-      font-size: 26px;
+
+    .logo {
+      font-size: 38px;
       font-weight: bold;
-      letter-spacing: 1px;
+      color: #f5f5f5;
+      letter-spacing: 1.5px;
     }
+
+    .logo span {
+      color: #d4af37;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
     main {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 60px 20px;
+      max-width: 900px;
       margin: auto;
+      text-align: center;
     }
+
     h1 {
       font-size: 32px;
-      margin-bottom: 10px;
-      color: #192a56;
+      margin-bottom: 15px;
+      color: #f5f5f5;
     }
+
     p {
       font-size: 18px;
-      line-height: 1.6;
-      color: #353b48;
+      color: #ccc;
     }
-    .contact {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    .highlight {
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
       margin-top: 40px;
     }
-    .contact h2 {
-      color: #273c75;
-      margin-bottom: 15px;
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
     }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact, .form-section {
+      background-color: #1a1a1a;
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.08);
+    }
+
+    .contact h2, .form-section h2 {
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+      font-size: 17px;
+    }
+
     a {
-      color: #273c75;
+      color: #d4af37;
       text-decoration: none;
       font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #111;
+      color: #f5f5f5;
+      font-size: 16px;
+    }
+
+    input:focus, textarea:focus {
+      outline: 1px solid #d4af37;
+    }
+
+    button {
+      background-color: #d4af37;
+      color: #000;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #b9972c;
+    }
+
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       padding: 20px;
-      background-color: #273c75;
-      color: white;
+      background-color: #000;
+      color: #aaa;
       font-size: 14px;
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #d4af37;
     }
   </style>
 </head>
 <body>
   <header>
-    EREN DEKORASYON & İNŞAAT
+    <div class="logo">EREN YAPI <span>DEKORASYON</span></div>
+    <nav>
+      <a href="#hakkinda">Hakkımızda</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#teklif">Teklif Al</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="https://www.instagram.com/eren_dekorasyonn/" target="_blank">Instagram</a>
+    </nav>
   </header>
 
   <main>
-    <h1>Profesyonel Dekorasyon ve İnşaat Hizmetleri</h1>
-    <p>
-      Ankara merkezli <b>Eren Dekorasyon & İnşaat</b> olarak, iç ve dış cephe yenileme, komple tadilat, 
-      boya, alçı, sıva, mantolama ve müteahhitlik alanlarında anahtar teslim çözümler sunuyoruz.  
-      Tecrübemiz, kaliteli işçiliğimiz ve zamanında teslim anlayışımızla her projede güven inşa ediyoruz.
-    </p>
+    <section id="hakkinda">
+      <h1>Profesyonel Dekorasyon ve İnşaat Hizmetleri</h1>
+      <p>
+        <span class="highlight">Eren Yapı Dekorasyon</span>, Ankara merkezli bir yapı ve tadilat firmasıdır.  
+        Dış cephe, iç dekorasyon, komple tadilat, mantolama, boya, alçı, sıva, seramik, marangozluk  
+        ve müteahhitlik alanlarında profesyonel çözümler sunuyoruz.  
+      </p>
+      <p style="margin-top:15px;">
+        Güven, estetik ve dayanıklılığı ön planda tutan yaklaşımımızla  
+        her projede <span class="highlight">kaliteli işçilik</span> ve <span class="highlight">zamanında teslim</span> garantisi veriyoruz.
+      </p>
+    </section>
 
-    <div class="contact">
+    <section id="galeri" class="gallery">
+      <!-- 📸 İleride örnek iş fotoğraflarını buraya ekleyebilirsin -->
+      <img src="https://picsum.photos/400/300?random=1" alt="Eren Yapı Dekorasyon">
+      <img src="https://picsum.photos/400/300?random=2" alt="Eren Yapı Dekorasyon">
+      <img src="https://picsum.photos/400/300?random=3" alt="Eren Yapı Dekorasyon">
+      <img src="https://picsum.photos/400/300?random=4" alt="Eren Yapı Dekorasyon">
+    </section>
+
+    <section id="teklif" class="form-section">
+      <h2>Teklif Alın</h2>
+      <form onsubmit="alert('Teşekkürler! Mesajınız başarıyla gönderildi.'); return false;">
+        <input type="text" placeholder="Ad Soyad" required>
+        <input type="tel" placeholder="Telefon Numarası" required>
+        <textarea rows="5" placeholder="Mesajınız"></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+
+    <section class="contact" id="iletisim">
       <h2>İletişim Bilgileri</h2>
       <p>📞 <b>Telefon:</b> <a href="tel:05522340496">0552 234 04 96</a></p>
       <p>✉️ <b>E-posta:</b> <a href="mailto:devraneren006@hotmail.com">devraneren006@hotmail.com</a></p>
       <p>📍 <b>Adres:</b> Ankara / Türkiye</p>
       <p>📸 <b>Instagram:</b> <a href="https://www.instagram.com/eren_dekorasyonn/" target="_blank">@eren_dekorasyonn</a></p>
-    </div>
+      <p style="margin-top:20px; font-size:16px; color:#999;">
+        <i>Komple dekorasyon, inşaat ve tadilat çözümleri için bizimle iletişime geçin.</i>
+      </p>
+    </section>
   </main>
 
   <footer>
-    © 2025 Eren Dekorasyon & İnşaat | Tüm Hakları Saklıdır.
+    © 2025 <b>Eren Yapı Dekorasyon</b> | Tüm Hakları Saklıdır.  
+    <br>
+    <a href="https://www.instagram.com/eren_dekorasyonn/" target="_blank">Instagram'da Takip Et</a>
   </footer>
 </body>
 </html>
